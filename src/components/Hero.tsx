@@ -60,7 +60,7 @@ export default function Hero() {
         >
           <a
             href="#how"
-            className="inline-block border border-white/30 text-white uppercase tracking-widest text-sm px-8 py-4 hover:bg-white/10 transition-all duration-300"
+            className="inline-block border border-white/30 text-white uppercase tracking-widest text-sm px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300"
           >
             Узнать больше
           </a>
@@ -68,7 +68,7 @@ export default function Hero() {
             href="https://www.donationalerts.com/r/aura_ru"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-black uppercase tracking-widest text-sm px-8 py-4 font-semibold hover:bg-neutral-200 transition-all duration-300"
+            className="inline-block bg-white text-black uppercase tracking-widest text-sm px-8 py-4 rounded-full font-semibold hover:bg-neutral-200 transition-all duration-300"
           >
             Заказать отзывы
           </a>

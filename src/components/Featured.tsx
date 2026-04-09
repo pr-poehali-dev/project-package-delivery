@@ -79,7 +79,7 @@ export default function Featured() {
               href="https://www.donationalerts.com/r/aura_ru"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-10 bg-white text-black uppercase tracking-widest text-sm px-10 py-4 font-semibold hover:bg-neutral-200 transition-colors duration-300"
+              className="inline-block mt-10 bg-white text-black uppercase tracking-widest text-sm px-10 py-4 rounded-full font-semibold hover:bg-neutral-200 transition-colors duration-300"
             >
               Заказать отзывы
             </a>

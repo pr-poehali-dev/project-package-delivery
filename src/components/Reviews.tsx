@@ -47,7 +47,7 @@ export default function Reviews() {
             href="https://t.me/+wCu-erwzWmw0NDAy"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-4 border border-white/20 text-white px-10 py-5 hover:bg-white hover:text-black transition-all duration-300"
+            className="group inline-flex items-center gap-4 border border-white/20 text-white px-10 py-5 rounded-full hover:bg-white hover:text-black transition-all duration-300"
           >
             <svg
               viewBox="0 0 24 24"

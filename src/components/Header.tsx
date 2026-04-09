@@ -18,7 +18,7 @@ export default function Header({ className }: HeaderProps) {
             href="https://www.donationalerts.com/r/aura_ru"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white border border-white/40 hover:bg-white hover:text-black transition-all duration-300 uppercase text-sm px-4 py-1.5"
+            className="text-white border border-white/40 hover:bg-white hover:text-black transition-all duration-300 uppercase text-sm px-4 py-1.5 rounded-full"
           >
             Заказать
           </a>

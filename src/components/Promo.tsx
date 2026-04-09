@@ -52,7 +52,7 @@ export default function Promo() {
           href="https://www.donationalerts.com/r/aura_ru"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block mt-12 border border-white/30 text-white uppercase tracking-widest text-sm px-8 py-4 hover:bg-white hover:text-black transition-all duration-300"
+          className="inline-block mt-12 border border-white/30 text-white uppercase tracking-widest text-sm px-8 py-4 rounded-full hover:bg-white hover:text-black transition-all duration-300"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.6 }}
