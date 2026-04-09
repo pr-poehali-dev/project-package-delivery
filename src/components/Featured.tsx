@@ -1,9 +1,16 @@
 export default function Featured() {
   const benefits = [
-    { num: "01", title: "Живые аккаунты", desc: "Все отзывы пишутся с реальных профилей — никаких ботов и фейков." },
-    { num: "02", title: "Без риска блокировки", desc: "Работаем аккуратно: постепенный прирост, естественный темп." },
-    { num: "03", title: "Любая тематика", desc: "Ресторан, салон, магазин, клиника — адаптируем текст под вас." },
-    { num: "04", title: "Быстрый результат", desc: "Первые отзывы появляются уже в течение 24–48 часов." },
+    { num: "01", title: "Живые аккаунты", desc: "Все отзывы пишутся с реальных профилей — никаких ботов и фейков. Яндекс не сможет их отфильтровать." },
+    { num: "02", title: "Без риска блокировки", desc: "Работаем аккуратно: постепенный прирост, естественный темп публикаций." },
+    { num: "03", title: "Любая тематика", desc: "Ресторан, салон, магазин, клиника — адаптируем текст под вашу нишу." },
+    { num: "04", title: "Быстрый результат", desc: "Первые отзывы появляются уже через 24–48 часов после оплаты." },
+  ];
+
+  const prices = [
+    { count: "5 отзывов", price: "от 2 500 ₽", note: "Стартовый пакет" },
+    { count: "10 отзывов", price: "от 4 500 ₽", note: "Популярный" },
+    { count: "20 отзывов", price: "от 8 000 ₽", note: "Максимальный эффект" },
+    { count: "Индивидуально", price: "по запросу", note: "Любое количество" },
   ];
 
   return (
@@ -24,18 +31,49 @@ export default function Featured() {
           ))}
         </div>
 
+        <div className="mt-16">
+          <h3 className="uppercase text-sm tracking-widest text-neutral-500 mb-8">Стоимость</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-200">
+            {prices.map((p) => (
+              <div key={p.count} className="bg-white p-8 flex flex-col gap-2">
+                <span className="text-xs uppercase tracking-widest text-neutral-400">{p.note}</span>
+                <h4 className="text-2xl font-bold text-neutral-900 mt-2">{p.price}</h4>
+                <p className="text-neutral-500 text-sm">{p.count}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-16 p-8 lg:p-12 bg-neutral-900 text-white">
-          <h3 className="uppercase text-sm tracking-widest text-neutral-400 mb-4">Как заказать</h3>
-          <ol className="space-y-4 text-lg">
-            <li><span className="text-neutral-400 mr-3">1.</span>Нажмите «Заказать отзывы» — откроется страница оплаты DonationAlerts</li>
-            <li><span className="text-neutral-400 mr-3">2.</span>В сообщении к платежу укажите: ссылку на вашу компанию в Яндекс.Картах, нужное количество отзывов и пожелания к содержанию (тон, ключевые слова, оценка)</li>
-            <li><span className="text-neutral-400 mr-3">3.</span>Мы свяжемся с вами и согласуем детали перед стартом</li>
+          <h3 className="uppercase text-sm tracking-widest text-neutral-400 mb-6">Как заказать</h3>
+          <ol className="space-y-5 text-lg">
+            <li className="flex gap-4">
+              <span className="text-neutral-400 shrink-0 font-mono">1.</span>
+              <span>Нажмите «Заказать отзывы» — откроется страница оплаты DonationAlerts</span>
+            </li>
+            <li className="flex gap-4">
+              <span className="text-neutral-400 shrink-0 font-mono">2.</span>
+              <span>
+                В сообщении к платежу обязательно укажите:
+                <ul className="mt-3 space-y-1.5 text-base text-neutral-300 list-none ml-0">
+                  <li className="flex gap-2"><span className="text-neutral-500">—</span> ссылку на вашу компанию в Яндекс.Картах</li>
+                  <li className="flex gap-2"><span className="text-neutral-500">—</span> нужное количество отзывов</li>
+                  <li className="flex gap-2"><span className="text-neutral-500">—</span> желаемый тон и ключевые слова</li>
+                  <li className="flex gap-2"><span className="text-neutral-500">—</span> нужную оценку (например, 5 звёзд)</li>
+                  <li className="flex gap-2"><span className="text-neutral-500">—</span> любые пожелания к содержанию</li>
+                </ul>
+              </span>
+            </li>
+            <li className="flex gap-4">
+              <span className="text-neutral-400 shrink-0 font-mono">3.</span>
+              <span>Мы свяжемся с вами и согласуем детали перед стартом</span>
+            </li>
           </ol>
           <a
             href="https://www.donationalerts.com/r/aura_ru"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-8 bg-white text-black uppercase tracking-widest text-sm px-8 py-4 font-semibold hover:bg-neutral-200 transition-colors duration-300"
+            className="inline-block mt-10 bg-white text-black uppercase tracking-widest text-sm px-10 py-4 font-semibold hover:bg-neutral-200 transition-colors duration-300"
           >
             Заказать отзывы
           </a>
